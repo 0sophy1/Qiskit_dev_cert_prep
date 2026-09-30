@@ -131,7 +131,6 @@ When a community example disagrees with the official documentation, trust the Qi
 - [KurianUthuppu/ibm_qiskit_2_x](https://github.com/KurianUthuppu/ibm_qiskit_2_x) — practice exams with solutions.
 - [Luke-J-Miller/Qiskit-v2.X-developer-certification-practice-test](https://github.com/Luke-J-Miller/Qiskit-v2.X-developer-certification-practice-test) — large notebook question bank with adaptive study.
 - [MrRobert91/QuantumComputingGuide](https://github.com/MrRobert91/QuantumComputingGuide) — interactive lessons and a mock exam.
-- [0sophy1/qrabbit-hole](https://github.com/0sophy1/qrabbit-hole) — story-based conversational quiz.
 
 ### Sample-test walkthroughs and exam reports
 
