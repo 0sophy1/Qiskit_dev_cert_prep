@@ -1,0 +1,9 @@
+qiskit[visualization]>=2.0,<2.1
+qiskit-aer>=0.17,<0.18
+qiskit-ibm-runtime>=0.40,<0.41
+qiskit-qasm3-import>=0.6,<0.7
+openqasm3>=1.0,<2
+numpy<3
+matplotlib
+requests
+jupyterlab
