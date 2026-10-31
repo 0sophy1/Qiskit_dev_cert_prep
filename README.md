@@ -22,7 +22,10 @@ Pearson VUE (test center or online).
 | 5 | Use the sampler primitive | 12% | 8 |
 | 6 | Use the estimator primitive | 12% | 8 |
 | 7 | Retrieve and analyze the results of quantum circuits | 10% | 7 |
-| 8 | Operate with OpenQASM | 6% | 4 |
+| 8 | Operate with OpenQASM | 6% | 5 |
+
+The question counts are this repository's 68-question allocation, rounded from the official
+percentages; they are not a promise of the exact number in each section on the live exam.
 
 ## Contents
 
@@ -36,28 +39,72 @@ Pearson VUE (test center or online).
 | [06_Use_the_Estimator_Primitive](06_Use_the_Estimator_Primitive.ipynb) | `EstimatorV2` PUBs, precision and shots, resilience levels, TREX / ZNE / PEA / PEC, manual ZNE |
 | [07_Retrieve_and_Analyze_Results](07_Retrieve_and_Analyze_Results.ipynb) | Job status and monitoring, `service.job()` / `service.jobs()`, sessions, saving results, analysis |
 | [08_Operate_with_OpenQASM](08_Operate_with_OpenQASM.ipynb) | OpenQASM 3 structure and types, semantics, `qasm2` / `qasm3` interop, Runtime REST API |
-| [09_Final_Check_Mock_Exam_A](09_Final_Check_Mock_Exam_A.ipynb) | Full 68-question mock exam, standard level |
-| [10_Final_Check_Mock_Exam_B](10_Final_Check_Mock_Exam_B.ipynb) | Full 68-question mock exam, harder (more code reading and multi-select) |
+| [09_Final_Check_Mock_Exam_A](09_Final_Check_Mock_Exam_A.ipynb) | 68-question foundation practice: core concepts and short code reading |
+| [10_Final_Check_Mock_Exam_B](10_Final_Check_Mock_Exam_B.ipynb) | Second 68-question standard practice set: short applications of the same core skills |
 | [solutions/09_Final_Check_Mock_Exam_A_Solutions](solutions/09_Final_Check_Mock_Exam_A_Solutions.ipynb) | Answer key and explanation for every Mock Exam A question |
 | [solutions/10_Final_Check_Mock_Exam_B_Solutions](solutions/10_Final_Check_Mock_Exam_B_Solutions.ipynb) | Answer key and explanation for every Mock Exam B question |
 
 Notebooks 01–08 have lecture parts with runnable examples, 7–8 coding exercises each (with check cells),
-and 18–24 exam-style questions each; the answer or solution is folded directly under each item (click
-Show answer / Show solution). Notebooks 09–10 are practice exams without answers: questions are shuffled
-across sections by the official weights, like the real exam, you record your answers in order, and a
+and 18–24 review questions each; the answer or solution is folded directly under each item (click
+Show answer / Show solution). Each lesson identifies a core study path and optional extensions;
+the total exercise count includes those extensions. Notebooks 09–10 are practice exams without answers: questions are shuffled
+across sections using the allocation above, you record your answers in order, and a
 scoring cell grades the attempt at the end. Answers and explanations for the two exams are in the
 [solutions](solutions/) folder.
 
 ## How to use
 
-1. Work through 01–08 in order. Run the cells top to bottom; in each practice cell replace the `None` /
-   `# TODO` parts and run the check cell below it.
+1. Work through the **core path** shown at the start of each notebook 01–08. Run setup and supplied
+   helper cells; in core practice cells replace the `None` / `# TODO` parts and run their checks.
+   Optional blocks have skip/resume directions. You do not need to implement every extension before
+   trying a mock exam.
 2. Take Mock Exam A under exam conditions. Run the Start cell, then answer in order: under each
    question, type your choice in its answer cell (for example `answer(12, "B")`) and run it. When you
    finish, run the scoring cell. It reports the score per section, unanswered questions, and the correct
    letter for each question you missed.
 3. Read the explanations in `solutions/09_Final_Check_Mock_Exam_A_Solutions.ipynb`, review the section
    notebooks it points to, then take Mock Exam B and review it the same way.
+
+Use scores to locate weak topics, not to predict a live-exam score. There is no validated requirement
+to score 80% on both community mocks before booking the exam. IBM's public sample illustrates question
+style but explicitly does not predict exam success; IBM's separate full-length Assessment Test is the
+official readiness check. Neither mock here is an official or statistically calibrated equivalent.
+
+## What to prioritize
+
+Keep all eight domains in your study plan. Spend more review time on circuit construction (18%),
+operations (16%), and execution (15%) than on OpenQASM (6%); equal-length lesson notebooks do not imply
+equal exam weight. The core path covers Pauli/bit ordering, state and circuit plots, measurement,
+parameters and dynamic circuits, transpilation/ISA, execution modes, PUBs and basic broadcasting,
+Sampler shots/results/DD, Estimator observables/layout/precision/resilience, job retrieval/monitoring,
+and OpenQASM types/interoperability/REST.
+
+Optional extensions retain useful developer practice: building feature maps by hand, custom
+transpiler hooks, manual readout correction, gate folding/Richardson extrapolation, and detailed
+option defaults or local-backend edge cases. “Optional” means a later learning priority, not a claim
+that an official objective or its linked API can never appear on the exam. In particular, keep basic
+broadcasting, twirling, ZNE, and REST in the core study scope.
+
+| Notebook | Core coding practice | Optional coding practice |
+|---|---|---|
+| 01 Operations | 1.1–1.4, 1.6 | 1.5, 1.7 |
+| 02 Visualization | 2.1–2.6 | 2.7 |
+| 03 Circuit construction | 3.1–3.5, 3.7 | 3.6, 3.8 |
+| 04 Circuit execution | 4.1–4.6 | 4.7 |
+| 05 Sampler | 5.1–5.4 | 5.5–5.7 |
+| 06 Estimator | 6.1–6.5 | 6.6–6.7 |
+| 07 Results | 7.1–7.3, 7.5–7.7 | 7.4 |
+| 08 OpenQASM | 8.2–8.4, 8.6 | 8.1, 8.5, 8.7 |
+
+This gives 42 core exercises and 15 optional exercises. Each lesson also marks selected review
+questions as deeper practice. Run the supplied setup/helpers and follow the in-notebook resume links;
+the exercise table alone does not replace the surrounding explanations.
+
+The difficulty revision favors one main decision per question, short runnable snippets, and plausible
+distractors. It removes many exact-timeout/default-value puzzles and complicated shape combinations,
+while retaining the 68-question format and all eight domains. The core paths were checked against the
+official study guide; details of validation and the public examples consulted are in
+[TECHNICAL_NOTES.md](TECHNICAL_NOTES.md).
 
 ## Setup
 
